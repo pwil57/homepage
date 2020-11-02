@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>About Me</title>
+        <script>
+            function checkAnswer()
+            {
+                let userinput = document.querySelector("#check");
+
+                if (userinput.value == "New York")
+                {
+                    userinput.style.backgroundColor = "#00ff00";
+                    document.getElementById("Answer2").innerHTML = "Correct!";
+                }
+
+                else
+                {
+                    userinput.style.backgroundColor = "#ff0000";
+                    document.getElementById("Answer2").innerHTML = "Incorrect!";
+                }
+            }
+            function blink()
+            {
+                let headline = document.getElementById("blink")
+                if (headline.style.visibility == "visible")
+                {
+                    headline.style.visibility = "hidden";
+                }
+                else
+                {
+                    headline.style.visibility = "visible";
+                }
+            }
+            window.setInterval(blink,750);
+        </script>
+    </head>
+    <body>
+    <a href="https://4fcfb931-cc83-4004-b802-e38eaf8f197b-ide.cs50.xyz:8080/index.html" class="link">Return to My Index Page</a> &nbsp;&nbsp;
+    <a href="https://4fcfb931-cc83-4004-b802-e38eaf8f197b-ide.cs50.xyz:8080/music.html" class="link">My Music Page</a> &nbsp;&nbsp;
+    <a href="https://4fcfb931-cc83-4004-b802-e38eaf8f197b-ide.cs50.xyz:8080/nba.html" class="link">My NBA Page</a>
+    <header>
+        I am Peter Wilson, a junior at Harvard concentrating in Chemistry
+        <hr class="line2">
+    </header>
+        <h2 id="blink">Get to Know Me Through Trivia</h2>
+        <hr class="line" >
+            <h3>
+                What state am I from? Hint: We have the best pizza and the best bagels
+            </h3>
+        <input type="text" id="check" placeholder="Type your answer">
+        <button onclick="checkAnswer()">Check Answer</button>
+        <p id="Answer2"></p>
+        <hr class="line2">
+        <img class="family" src="Fam2.jpeg" alt="...">
+        <img class="family" src="Fam1.jpeg" alt="...">
+        <img class="family" src="Fam3.JPG" alt="...">
+        <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+        <p>
+            The left picture: Me with my sister and my dad.
+        </p>
+        <p id="text1">
+            The middle picture: Me with my sister and cousin.
+        </p>
+        <p id="text2">
+            The right picture: Me with my girlfriend, Arcely.<br>
+        </p>
+        <p>My hobbies include playing soccer and basketball, watching shows (Favorite Shows: The Office, Brooklyn Nine-Nine), and listening to music. In addition to being a Harvard student,
+           I am also a CA for Math 21b and a director for the Cambridge After School Program. I also really enjoy coffee.</p>
+
+
+    </body>
+</html>

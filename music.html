@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Music</title>
+        <script>
+        </script>
+    </head>
+    <body>
+      <a href="https://4fcfb931-cc83-4004-b802-e38eaf8f197b-ide.cs50.xyz:8080/index.html" class="link">Return to My Index Page</a> &nbsp;&nbsp;
+      <a href="https://4fcfb931-cc83-4004-b802-e38eaf8f197b-ide.cs50.xyz:8080/aboutme.html" class="link">My About Me Page</a> &nbsp;&nbsp;
+      <a href="https://4fcfb931-cc83-4004-b802-e38eaf8f197b-ide.cs50.xyz:8080/nba.html" class="link">My NBA Page</a>
+      <header>
+        These are some of my favorite artists! <br>
+        <hr class="line2">
+        <p>Click on the buttons below to hear my favorite song from each artist.</p>
+    </header>
+    <audio class="music" id="Juice" src="Robbery.mp3"></audio>
+    <audio class="music" id="LilUzi" src="Buy-It.mp3"></audio>
+    <audio class="music" id="aboogie" src="Timeless.mp3"></audio>
+    <!--implemened from bootstrap: https://getbootstrap.com/docs/4.5/components/carousel/-->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <!--img from https://www.google.com/search?q=juice+wrld&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjR2sTDo-LsAhVzj3IEHUjQDpcQ_AUoAnoECAMQBA&biw=1440&bih=789#imgrc=03hjhXSbneZYgM-->
+      <img src="juiceWRLD.jpg" class="d-block" alt="...">
+      <button onclick="Juice.play()">Juice WRLD</button>
+      <button onclick="Juice.pause()">Pause This Song</button>
+    </div>
+    <div class="carousel-item">
+      <img src="LUV.jpg" class="d-block" alt="...">
+      <button onclick="LilUzi.play()">Lil Uzi Vert</button>
+      <button onclick="LilUzi.pause()">Pause This Song</button>
+    </div>
+    <div class="carousel-item">
+      <img src="Aboogie.jpg" class="d-block" alt="...">
+      <button onclick="aboogie.play()">A Boogie Wit Da Hoodie</button>
+      <button onclick="aboogie.pause()">Pause This Song</button>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+    </body>
+</html>
